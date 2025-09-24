@@ -14,78 +14,7 @@ export type Database = {
   }
   public: {
     Tables: {
-      Customer: {
-        Row: {
-          created_at: string
-          email_id: string | null
-          id: number
-          name: string | null
-          "phone number": string | null
-        }
-        Insert: {
-          created_at?: string
-          email_id?: string | null
-          id?: number
-          name?: string | null
-          "phone number"?: string | null
-        }
-        Update: {
-          created_at?: string
-          email_id?: string | null
-          id?: number
-          name?: string | null
-          "phone number"?: string | null
-        }
-        Relationships: []
-      }
-      products: {
-        Row: {
-          category: string | null
-          created_at: string | null
-          description: string | null
-          id: string
-          image: string | null
-          is_ai_recommended: boolean | null
-          is_new: boolean | null
-          is_trending: boolean | null
-          name: string
-          original_price: number | null
-          price: number
-          rating: number | null
-          reviews: number | null
-        }
-        Insert: {
-          category?: string | null
-          created_at?: string | null
-          description?: string | null
-          id?: string
-          image?: string | null
-          is_ai_recommended?: boolean | null
-          is_new?: boolean | null
-          is_trending?: boolean | null
-          name: string
-          original_price?: number | null
-          price: number
-          rating?: number | null
-          reviews?: number | null
-        }
-        Update: {
-          category?: string | null
-          created_at?: string | null
-          description?: string | null
-          id?: string
-          image?: string | null
-          is_ai_recommended?: boolean | null
-          is_new?: boolean | null
-          is_trending?: boolean | null
-          name?: string
-          original_price?: number | null
-          price?: number
-          rating?: number | null
-          reviews?: number | null
-        }
-        Relationships: []
-      }
+      [_ in never]: never
     }
     Views: {
       [_ in never]: never
